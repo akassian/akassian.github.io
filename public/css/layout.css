@@ -14,10 +14,11 @@ body {
 }
 
 /* Header Styles */
-header {
+.intro {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  /* height: 800px; */
+  /* min-height: 500px; */
+  height: 100vh;
   width: 100%;
   background: #1d161a;
   text-align: center;
@@ -25,13 +26,13 @@ header {
 }
 
 /* Vertically center banner section */
-header:before {
+.intro:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
-header .banner {
+.intro .banner {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
@@ -40,28 +41,28 @@ header .banner {
   text-align: center;
 }
 
-header .banner-text {
+.intro .banner-text {
   width: 100%;
 }
-header .banner-text h1 {
+.intro .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
   color: #fff;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
-header .banner-text h3 {
+.intro .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
   color: #a8a8a8;
   margin: 0 auto;
   width: 70%;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
-header .banner-text h3 span,
-header .banner-text h3 a {
+.intro .banner-text h3 span,
+.intro .banner-text h3 a {
   color: #fff;
 }
-header .banner-text hr {
+.intro .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
   border-color: #2f2d2e;
@@ -69,26 +70,26 @@ header .banner-text hr {
 }
 
 /* Header social links */
-header .social {
+.intro .social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
 }
-header .social li {
+.intro .social li {
   display: inline-block;
   margin: 0 15px;
   padding: 0;
 }
-header .social li a {
+.intro .social li a {
   color: #fff;
 }
-header .social li a:hover {
+.intro .social li a:hover {
   color: #c9b5c0;
 }
 
 /* Scrolldown link */
-header .scrolldown a {
+.intro .scrolldown a {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -107,7 +108,7 @@ header .scrolldown a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header .scrolldown a:hover {
+.intro .scrolldown a:hover {
   color: #c9b5c0;
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 
 function Header({ data }) {
   console.log("data", data);
+
   let {
     firstName,
     lastName,
@@ -23,8 +24,9 @@ function Header({ data }) {
   });
 
   return (
-    <header id="home">
-      <nav id="nav-wrap">
+    <div>
+      <header className="intro" id="home">
+        {/* <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
@@ -59,29 +61,30 @@ function Header({ data }) {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
-      <div className="row banner">
-        <div className="banner-text">
-          <img className="profile-pic" src={image} alt="Profile Pic" />
-          <h3>Hi, I'm</h3>
-          <h1 className="responsive-headline">
-            {firstName} {lastName}
-          </h1>
-          <hr />
-          <h3>
-            <span>{occupation}</span> from {city}, {state}
-          </h3>
-          <ul className="social">{networks}</ul>
+        <div className="row banner">
+          <div className="banner-text">
+            <img className="profile-pic" src={image} alt="Profile Pic" />
+            <h3>Hi, I'm</h3>
+            <h1 className="responsive-headline">
+              {firstName} {lastName}
+            </h1>
+            <hr />
+            <h3>
+              <span>{occupation}</span> from {city}, {state}
+            </h3>
+            <ul className="social">{networks}</ul>
+          </div>
         </div>
-      </div>
 
-      <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
-          <i className="icon-down-circle"></i>
-        </a>
-      </p>
-    </header>
+        <p className="scrolldown">
+          <a className="smoothscroll" href="#about">
+            <i className="icon-down-circle"></i>
+          </a>
+        </p>
+      </header>
+    </div>
   );
 }
 

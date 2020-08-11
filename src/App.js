@@ -5,10 +5,12 @@ import About from "./components/About";
 import { resumeData } from "./data/resumeData";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import NavTabs from "./components/NavTabs";
 
 function App() {
   return (
     <div className="App">
+      <NavTabs />
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
       <Resume data={resumeData.resume} />
