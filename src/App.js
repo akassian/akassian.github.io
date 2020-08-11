@@ -1,22 +1,18 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import About from "./components/About";
+import { resumeData } from "./data/resumeData";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header data={resumeData.main} />
+      <About data={resumeData.main} />
+      <Resume data={resumeData.resume} />
+      <Portfolio data={resumeData.portfolio} />
     </div>
   );
 }
