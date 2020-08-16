@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import ScrollTop from "./ScrollTop";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+// import { red } from "@material-ui/core/colors";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -36,20 +37,39 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
   },
-}));
+  tab: {
+    color: "white",
+    "font-weight": 600,
+    "font-size": "70%",
+    // "text-transform": "none",
+    // "font-variant": "small-caps",
+    transition: "0.3s",
+    "&:hover": {
+      color: "goldenrod",
+    },
+  },
+  active_tab: {
+    color: "goldenrod",
+    "font-weight": 650,
+    "font-size": "75%",
+    transition: "0.3s",
+  },
+});
 
 export default function NavTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  function getStyle(isActive) {
+    return isActive ? classes.active_tab : classes.tab;
+  }
 
   return (
     <div className={classes.root}>
@@ -60,11 +80,23 @@ export default function NavTabs() {
           aria-label="nav tabs"
           centered
         >
-          <Tab label="Home" href="#home" />
-          <Tab label="About" href="#about" />
-          <Tab label="Resume" href="#resume" />
-          <Tab label="Projects" href="#projects" />
-          <Tab label="Contact" href="#contact" />
+          <Tab className={getStyle(value === 0)} label="Home" href="#home" />
+          <Tab className={getStyle(value === 1)} label="About" href="#about" />
+          <Tab
+            className={getStyle(value === 2)}
+            label="Resume"
+            href="#resume"
+          />
+          <Tab
+            className={getStyle(value === 3)}
+            label="Projects"
+            href="#projects"
+          />
+          <Tab
+            className={getStyle(value === 4)}
+            label="Contact"
+            href="#contact"
+          />
         </Tabs>
       </AppBar>
       <div id="back-to-top-anchor" />

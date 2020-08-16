@@ -3,18 +3,19 @@ export const resumeData = {
     firstName: "Andrei",
     lastName: "Kassiantchouk",
     occupation: "Full Stack Engineer",
-    description: "Hire me yo placeholder",
+    description: "",
     image: "pic.jpg",
-    bio: "My favorite color is red.",
-    contactmessage: "Contact me yo.",
+    bio:
+      "I find adventure in my work ethic - I love breaking out of my comfort zone and picking up new things! I find my greatest pleasure in my ability to enable others. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work. When I'm not behind a screen, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh. I love anything of any genre that's heavily fictional, fantastical, or even unorthodox as well - toss me some recommendations!",
     email: "akassian@berkeley.edu",
-    phone: "(510)589-8412",
+    phone: "(510) 589-8412",
     address: {
       city: "Hayward",
       state: "CA",
       zip: "94544",
     },
-    resumedownload: "http://google.com",
+    resumeDownload:
+      "https://docs.google.com/document/d/1tz9CDTwpOkvGkl7NDs7h35WoVq1pEgMOanENYMf9bUU/export?format=pdf",
     social: [
       {
         name: "github",
@@ -29,66 +30,107 @@ export const resumeData = {
     ],
   },
   resume: {
-    skillmessage: "I'm pretty good at stuff",
     education: [
       {
         school: "UC Berkeley",
         degree: "Computer Science",
         graduated: "December 2019",
-        description: "I did stuff",
+        description: "Bachelor's in Computer Science",
       },
       {
-        school: "Rithm",
-        degree: "Stuff",
+        school: "Rithm School",
+        degree: "Full Stack Web Development",
         graduated: "June 2020",
-        description: "More stuff",
+        description: "San Francisco Bootcamp",
       },
     ],
     work: [
       {
-        company: "Company",
-        title: "Worker",
-        years: "Time",
-        description: "Did stuff",
+        company: "Clevercounsel, LLC",
+        title: "Full Stack Engineer Intern",
+        years: "05/2020 - 06/2020",
+        description:
+          "React • JavaScript • HTML • CSS • Jest • Flask • RESTful API • MySQL",
       },
       {
-        company: "Company2",
-        title: "Worker2",
-        years: "Time2",
-        description: "Did stuff2",
+        company: "Premiertec US Corp",
+        title: "Application Developer Intern",
+        years: "06/2017 - 08/2017",
+        description: "JavaScript • jQuery • HTML • CSS • Node.js • RESTful API",
+      },
+      {
+        company: "UC Berkeley",
+        title: "Academic Intern",
+        years: "01/2017 - 05/2017",
+        description: "Lab Assistant for 2 sections of CS 61B • Data Structures",
       },
     ],
     skills: [
       {
-        name: "Git",
+        Languages: [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "SQL",
+          "Java",
+        ],
       },
       {
-        name: "ReactJs",
+        "Libraries & Frameworks": [
+          "React",
+          "Redux",
+          "jQuery",
+          "Bootstrap",
+          "Material UI",
+          "Node.js",
+          "Express.js",
+          "Flask",
+          "Jest",
+          "Jasmine",
+        ],
       },
-      {
-        name: "CSS",
-      },
-      {
-        name: "HTML5",
-      },
-      {
-        name: "SQL",
-      },
+      { Databases: ["PostgreSQL", "MySQL", "MongoDB"] },
     ],
   },
   portfolio: {
     projects: [
+      // {
+      //   title: "AndreiK.net",
+      //   description: "description test",
+      //   expandedDescription: "expanded description test",
+      //   image: "demo2.gif",
+      //   url: "https://www.yahoo.com",
+      // },
       {
-        title: "Proj1",
-        category: "Yeet",
-        image: "demo.gif",
-        url: "https://www.google.com",
+        title: "Bearcon.net",
+        description:
+          "Solo Project • MongoDB • Express • React • Redux • Node.js • AWS",
+        expandedDescription:
+          "A UC Berkeley pseudo social network. MERN stack; built with MongoDB, Express, React, Redux, Node.js. Deployed on AWS",
+        image: "bearcon.png",
+        url: "http://bearcon.net/",
+        urlSource:
+          "https://github.com/akassian/Social-Network-Website-Bearcon.net",
       },
       {
-        title: "Proj2",
-        category: "Yeet2",
-        image: "demo2.gif",
-        url: "https://www.yahoo.com",
+        title: "Warbler",
+        description: " Group Project • Python • Flask • PostgreSQL • Heroku",
+        expandedDescription:
+          "Twitter toy clone built using Python, Flask, and PostgreSQL. Deployed on Heroku.",
+        image: "warbler.png",
+        url: "http://warbler.andreik.net/",
+        urlSource: "https://github.com/akassian/Warbler",
+      },
+      {
+        title: "Axe.gg",
+        description: "Solo Project • Javascript • jQuery • Node.js • AWS",
+        expandedDescription:
+          "A pseudo League of Legends analytics statistics site. Previously with daily updated data, now with a fixed data set due to breaking Riot API changes. Built with Javascript, jQuery, Node.js Deployed on AWS.",
+        image: "axe.png",
+        url: "http://axe.gg/",
+        urlSource: "https://github.com/akassian/Analytical-Website-AxeGG",
       },
     ],
   },

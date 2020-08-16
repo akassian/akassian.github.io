@@ -1,17 +1,8 @@
 import React from "react";
+import waves from "./y-waves-5-goldenrod.png";
 
 function Header({ data }) {
-  console.log("data", data);
-
-  let {
-    firstName,
-    lastName,
-    image,
-    occupation,
-    description,
-    address,
-    social,
-  } = data;
+  let { firstName, lastName, image, occupation, address, social } = data;
   let { city, state } = address;
   let networks = social.map(function (network) {
     return (
@@ -75,6 +66,9 @@ function Header({ data }) {
               <span>{occupation}</span> from {city}, {state}
             </h3>
             <ul className="social">{networks}</ul>
+            {/* <div className="test" />
+            <div>words</div> */}
+            <img className="test" src={waves} width="70%" alt="bg design" />
           </div>
         </div>
 
