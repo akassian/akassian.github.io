@@ -40,7 +40,7 @@ export const resumeData = {
         school: "Rithm School",
         degree: "Full Stack Web Development",
         graduated: "June 2020",
-        description: "San Francisco Bootcamp",
+        description: "Full Stack Program in San Francisco",
       },
     ],
     work: [
