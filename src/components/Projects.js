@@ -21,7 +21,7 @@ function Projects({ data }) {
       //     </a>
       //   </div>
       // </div>
-      <Grid item xs={12} sm={12} md={12} lg={6} xl={6} key={projects.title}>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} key={projects.title}>
         <ProjectCard
           title={projects.title}
           description={projects.description}
