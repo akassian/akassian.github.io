@@ -17,7 +17,7 @@ function About({ data }) {
       <div className="row">
         <div className="twelve columns main-col">
           <h2>About Me</h2>
-          <p>{bio}</p>
+          <p className="bio">{bio}</p>
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact</h2>

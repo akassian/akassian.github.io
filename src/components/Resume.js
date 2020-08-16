@@ -50,6 +50,14 @@ function Resume({ data }) {
         </div>
 
         <div className="nine columns main-col">{work}</div>
+
+        {/* <div className="nine columns main-col download">
+          <p>
+            <a href={data.resumeDownload} className="button">
+              <i className="fa fa-download"></i>Download Resume
+            </a>
+          </p>
+        </div> */}
       </div>
     </section>
   );

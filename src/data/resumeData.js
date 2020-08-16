@@ -29,6 +29,8 @@ export const resumeData = {
     ],
   },
   resume: {
+    resumeDownload:
+      "https://docs.google.com/document/d/1tz9CDTwpOkvGkl7NDs7h35WoVq1pEgMOanENYMf9bUU/export?format=pdf",
     education: [
       {
         school: "UC Berkeley",
@@ -107,7 +109,7 @@ export const resumeData = {
         description:
           "Solo Project • MongoDB • Express • React • Redux • Node.js • AWS",
         expandedDescription:
-          "A UC Berkeley pseudo social network. MERN stack; built with MongoDB, Express, React, Redux, Node.js. Deployed on AWS",
+          "A UC Berkeley pseudo social network.\n MERN stack; built with MongoDB, Express, React, Redux, Node.js.\n  Deployed on AWS.",
         image: "bearcon.png",
         url: "http://bearcon.net/",
         urlSource:
@@ -117,7 +119,7 @@ export const resumeData = {
         title: "Warbler",
         description: " Group Project • Python • Flask • PostgreSQL • Heroku",
         expandedDescription:
-          "Twitter toy clone built using Python, Flask, and PostgreSQL. Deployed on Heroku.",
+          "Twitter toy clone.\n Built using Python, Flask, and PostgreSQL.\n Deployed on Heroku.",
         image: "warbler.png",
         url: "http://warbler.andreik.net/",
         urlSource: "https://github.com/akassian/Warbler",
@@ -126,7 +128,7 @@ export const resumeData = {
         title: "Axe.gg",
         description: "Solo Project • Javascript • jQuery • Node.js • AWS",
         expandedDescription:
-          "A pseudo League of Legends analytics statistics site. Previously with daily updated data, now with a fixed data set due to breaking Riot API changes. Built with Javascript, jQuery, Node.js Deployed on AWS.",
+          "A pseudo League of Legends analytics statistics site.\n Previously with daily updated data,\n now with a fixed data set due to breaking Riot API changes.\n Built with Javascript, jQuery, Node.js.\n Deployed on AWS.",
         image: "axe.png",
         url: "http://axe.gg/",
         urlSource: "https://github.com/akassian/Analytical-Website-AxeGG",

@@ -251,6 +251,9 @@ ul#nav li.current a {
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
+}
+
+#about .bio {
   white-space: pre-wrap;
 }
 
@@ -323,6 +326,27 @@ ul#nav li.current a {
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
+}
+
+#resume .download {
+  padding-top: 6px;
+}
+#resume .download .button {
+  margin-top: 6px;
+  /* background: #444; */
+  /* color: #121254; */
+  color: white;
+  background: goldenrod;
+  /* background: #121254; */
+}
+#resume .download .button:hover {
+  /* background: #fff; */
+  opacity: 75%;
+  color: white;
+}
+#resume .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 #resume a,
