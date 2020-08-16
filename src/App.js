@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import { resumeData } from "./data/resumeData";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import NavTabs from "./components/NavTabs";
 
@@ -14,7 +14,7 @@ function App() {
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
       <Resume data={resumeData.resume} />
-      <Portfolio data={resumeData.portfolio} />
+      <Projects data={resumeData.projects} />
     </div>
   );
 }

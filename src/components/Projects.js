@@ -2,15 +2,15 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { Grid } from "@material-ui/core";
 
-function Portfolio({ data }) {
+function Projects({ data }) {
   let projects = data.projects.map(function (projects) {
     return (
-      // <div key={projects.title} className="columns portfolio-item">
+      // <div key={projects.title} className="columns projects-item">
       //   <div className="item-wrap">
       //     <a href={projects.url} title={projects.title}>
       //       <img alt={projects.title} src={projectImage} />
       //       <div className="overlay">
-      //         <div className="portfolio-item-meta">
+      //         <div className="projects-item-meta">
       //           <h5>{projects.title}</h5>
       //           <p>{projects.category}</p>
       //         </div>
@@ -35,7 +35,7 @@ function Portfolio({ data }) {
   });
 
   return (
-    <section id="portfolio">
+    <section id="projects">
       <h1>Some of My Works</h1>
       <div className="card-container">
         {/* <p>test</p> */}
@@ -48,7 +48,7 @@ function Portfolio({ data }) {
           <h1>Check Out Some of My Works.</h1>
 
           <div
-            id="portfolio-wrapper"
+            id="projects-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
           >
             <ProjectCard />
@@ -62,7 +62,7 @@ function Portfolio({ data }) {
           <h1>Check Out Some of My Works.</h1>
 
           <div
-            id="portfolio-wrapper"
+            id="projects-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
           >
             {projects}
@@ -73,4 +73,4 @@ function Portfolio({ data }) {
   );
 }
 
-export default Portfolio;
+export default Projects;

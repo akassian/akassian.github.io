@@ -1,7 +1,15 @@
 import React from "react";
 
 function About({ data }) {
-  let { name, bio, address, phone, email, resumeDownload } = data;
+  let {
+    firstName,
+    lastName,
+    bio,
+    address,
+    phone,
+    email,
+    resumeDownload,
+  } = data;
   let { city, state } = address;
 
   return (
@@ -14,7 +22,9 @@ function About({ data }) {
             <div className="columns contact-details">
               <h2>Contact</h2>
               <p className="address">
-                <span>{name}</span>
+                <span>
+                  {firstName} {lastName}
+                </span>
                 <br />
                 <span>{email}</span>
                 <br />

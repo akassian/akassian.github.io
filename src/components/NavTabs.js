@@ -94,8 +94,8 @@ export default function NavTabs() {
           />
           <Tab
             className={getStyle(value === 4)}
-            label="Contact"
-            href="#contact"
+            label="Email"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=akassian@berkeley.edu"
           />
         </Tabs>
       </AppBar>

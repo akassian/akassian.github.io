@@ -1,5 +1,5 @@
 import React from "react";
-import waves from "./y-waves-5-goldenrod.png";
+import waves from "./images/waves.png";
 
 function Header({ data }) {
   let { firstName, lastName, image, occupation, address, social } = data;
@@ -42,7 +42,7 @@ function Header({ data }) {
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#portfolio">
+            <a className="smoothscroll" href="#projects">
               Projects
             </a>
           </li>
@@ -56,7 +56,11 @@ function Header({ data }) {
 
         <div className="row banner">
           <div className="banner-text">
-            <img className="profile-pic" src={image} alt="Profile Pic" />
+            <img
+              className="profile-pic"
+              src={require("./images/" + image)}
+              alt="Profile Pic"
+            />
             <h3>Hi, I'm</h3>
             <h1 className="responsive-headline">
               {firstName} {lastName}
@@ -68,7 +72,12 @@ function Header({ data }) {
             <ul className="social">{networks}</ul>
             {/* <div className="test" />
             <div>words</div> */}
-            <img className="test" src={waves} width="70%" alt="bg design" />
+            <img
+              className="wave-horizontal"
+              src={waves}
+              width="70%"
+              alt="bg design"
+            />
           </div>
         </div>
 

@@ -3,10 +3,9 @@ export const resumeData = {
     firstName: "Andrei",
     lastName: "Kassiantchouk",
     occupation: "Full Stack Engineer",
-    description: "",
-    image: "pic.jpg",
+    image: "headshot2.png",
     bio:
-      "I find adventure in my work ethic - I love breaking out of my comfort zone and picking up new things! I find my greatest pleasure in my ability to enable others. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work. When I'm not behind a screen, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh. I love anything of any genre that's heavily fictional, fantastical, or even unorthodox as well - toss me some recommendations!",
+      "I find adventure in my work ethic - I love breaking out of my comfort zone and picking up new things!\n I find my greatest pleasure in my ability to enable others. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work.\n\n When I'm not coding away, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh.\n I love movies that are heavily sci-fi, fantastical, or simply break the mold - shoot me some recommendations!",
     email: "akassian@berkeley.edu",
     phone: "(510) 589-8412",
     address: {
@@ -94,7 +93,7 @@ export const resumeData = {
       { Databases: ["PostgreSQL", "MySQL", "MongoDB"] },
     ],
   },
-  portfolio: {
+  projects: {
     projects: [
       // {
       //   title: "AndreiK.net",
