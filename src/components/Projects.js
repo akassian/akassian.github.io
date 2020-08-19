@@ -26,7 +26,7 @@ function Projects({ data }) {
     <section id="projects">
       <h1>Some Of My Works</h1>
       <div className="card-container">
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
           {projects}
         </Grid>
       </div>

@@ -56,6 +56,7 @@ export default function ProjectCard({
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
   return (
     <Card className={classes.root}>
       <CardHeader title={title} />
@@ -66,6 +67,22 @@ export default function ProjectCard({
           title={title}
           href={url}
         />
+        {/* TODO: Hover over image -> .gif previews */}
+        {/* <div
+          // className={classes.thumbnail}
+          style={{
+            background: `url(${require(`../images/${image}`)})`,
+            height: "300px",
+            width: "600px",
+            "background-size": "contain",
+            "background-repeat": "no-repeat",
+            "&:hover": {
+              opacity: "0",
+            },
+          }}
+        ></div> */}
+        {/* <img src={require("../images/" + image)} alt="Bearcon.net Preview" /> */}
+        {/* </CardMedia> */}
       </CardActionArea>
       <CardContent>
         <Typography variant="h6" color="textSecondary" component="p">
