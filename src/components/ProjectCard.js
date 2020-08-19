@@ -59,13 +59,14 @@ export default function ProjectCard({
 
   return (
     <Card className={classes.root}>
-      <CardHeader title={title} />
+      <CardActionArea href={url}>
+        <CardHeader title={title} />
+      </CardActionArea>
       <CardActionArea href={url}>
         <CardMedia
           className={classes.media}
           image={require("../images/" + image)}
           title={title}
-          href={url}
         />
         {/* TODO: Hover over image -> .gif previews */}
         {/* <div
