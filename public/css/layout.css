@@ -274,9 +274,10 @@ ul#nav li.current a {
 }
 #about p {
   line-height: 30px;
-  font-size: 110%;
+  /* font-size: 110%; */
   /* font-weight: 450; */
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
+  color: #a8a8a8;
 }
 /* #about .profile-pic {
   position: relative;
