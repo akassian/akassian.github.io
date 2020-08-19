@@ -1,9 +1,14 @@
 import React from "react";
-import waves from "./images/waves.png";
+import waves from "../images/waves.png";
 
+/* Header / Intro Section */
 function Header({ data }) {
   let { firstName, lastName, image, occupation, address, social } = data;
   let { city, state } = address;
+
+  /* Map over social
+  (array of objects with name, url, and className values)
+  and generate HTML for each in the form of an li */
   let networks = social.map(function (network) {
     return (
       <li key={network.name}>
@@ -17,48 +22,12 @@ function Header({ data }) {
   return (
     <div>
       <header className="intro" id="home">
-        {/* <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
-        </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
-          Hide navigation
-        </a>
-
-        <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#resume">
-              Resume
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#projects">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav> */}
-
         <div className="row banner">
           <div className="banner-text">
+            {/* Profile Pic */}
             <img
               className="profile-pic"
-              src={require("./images/" + image)}
+              src={require("../images/" + image)}
               alt="Profile Pic"
             />
             <h3>Hi, I'm</h3>
@@ -69,14 +38,14 @@ function Header({ data }) {
             <h3>
               <span>{occupation}</span> from {city}, {state}
             </h3>
+            {/* Social Icon Liks */}
             <ul className="social">{networks}</ul>
-            {/* <div className="test" />
-            <div>words</div> */}
+            {/* Animated waves */}
             <img
               className="wave-horizontal"
               src={waves}
               width="70%"
-              alt="bg design"
+              alt="animated gold waves"
             />
           </div>
         </div>

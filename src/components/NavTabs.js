@@ -9,8 +9,8 @@ import Box from "@material-ui/core/Box";
 import ScrollTop from "./ScrollTop";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
-// import { red } from "@material-ui/core/colors";
 
+/* Navigation, based on Material UI for AppBar */
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -37,6 +37,7 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
+/* Styles for Navigation */
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
@@ -67,6 +68,7 @@ export default function NavTabs() {
     setValue(newValue);
   };
 
+  // Logic for setting a different style for the active tab
   function getStyle(isActive) {
     return isActive ? classes.active_tab : classes.tab;
   }
@@ -96,9 +98,12 @@ export default function NavTabs() {
             className={getStyle(value === 4)}
             label="Email"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=akassian@berkeley.edu"
+            // Link that creates a new gmail composed to my email, hardcoded for now
+            // TODO: build this link from my email as a variable of resumeData.js
           />
         </Tabs>
       </AppBar>
+      {/* Hardcoded anchor div id for ScrollTop to scroll back to */}
       <div id="back-to-top-anchor" />
       <ScrollTop>
         <Fab color="secondary" size="small" aria-label="scroll back to top">

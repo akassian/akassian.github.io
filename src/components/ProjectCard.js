@@ -8,21 +8,18 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import Collapse from "@material-ui/core/Collapse";
-// import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import { red } from "@material-ui/core/colors";
-// import FavoriteIcon from "@material-ui/icons/Favorite";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import VisibilityIcon from "@material-ui/icons/Visibility";
-// import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-// import MoreVertIcon from "@material-ui/icons/MoreVert";
 
+/* Styles for ProjectCard */
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
-    "white-space": "pre-wrap",
+    // maxWidth: 345,
+    "white-space":
+      "pre-wrap" /* Allows for \n for line breaking in strings - used by resumeData */,
   },
   media: {
     height: 0,
@@ -38,11 +35,13 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: "rotate(180deg)",
   },
-  avatar: {
-    backgroundColor: red[500],
+  expandedDescription: {
+    "text-align": "left",
   },
 }));
 
+/* Based on Material UI Simple Card Template,
+with drop-down expanded description section functionality */
 export default function ProjectCard({
   title,
   description,
@@ -63,13 +62,13 @@ export default function ProjectCard({
       <CardActionArea href={url}>
         <CardMedia
           className={classes.media}
-          image={require("./images/" + image)}
+          image={require("../images/" + image)}
           title={title}
           href={url}
         />
       </CardActionArea>
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="h6" color="textSecondary" component="p">
           {description}
         </Typography>
       </CardContent>
@@ -93,7 +92,13 @@ export default function ProjectCard({
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>{expandedDescription}</Typography>
+          <Typography
+            variant="h6"
+            className={classes.expandedDescription}
+            paragraph
+          >
+            {expandedDescription}
+          </Typography>
         </CardContent>
       </Collapse>
     </Card>

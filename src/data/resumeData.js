@@ -1,3 +1,6 @@
+/* Resume Data,
+organized here for convenience in object format,
+imported in as props for components to fill in data */
 export const resumeData = {
   main: {
     firstName: "Andrei",
@@ -97,19 +100,12 @@ export const resumeData = {
   },
   projects: {
     projects: [
-      // {
-      //   title: "AndreiK.net",
-      //   description: "description test",
-      //   expandedDescription: "expanded description test",
-      //   image: "demo2.gif",
-      //   url: "https://www.yahoo.com",
-      // },
       {
         title: "Bearcon.net",
         description:
           "Solo Project • MongoDB • Express • React • Redux • Node.js • AWS",
         expandedDescription:
-          "A UC Berkeley pseudo social network.\n MERN stack; built with MongoDB, Express, React, Redux, Node.js.\n  Deployed on AWS.",
+          "• UC Berkeley pseudo social network\n• MERN stack; built with MongoDB, Express, React, Redux, Node.js\n• Deployed on AWS",
         image: "bearcon.png",
         url: "http://bearcon.net/",
         urlSource:
@@ -119,7 +115,7 @@ export const resumeData = {
         title: "Warbler",
         description: " Group Project • Python • Flask • PostgreSQL • Heroku",
         expandedDescription:
-          "Twitter toy clone.\n Built using Python, Flask, and PostgreSQL.\n Deployed on Heroku.",
+          "• Twitter toy clone\n• Built using Python, Flask, and PostgreSQL\n• Deployed on Heroku",
         image: "warbler.png",
         url: "http://warbler.andreik.net/",
         urlSource: "https://github.com/akassian/Warbler",
@@ -128,7 +124,7 @@ export const resumeData = {
         title: "Axe.gg",
         description: "Solo Project • Javascript • jQuery • Node.js • AWS",
         expandedDescription:
-          "A pseudo League of Legends analytics statistics site.\n Previously with daily updated data,\n now with a fixed data set due to breaking Riot API changes.\n Built with Javascript, jQuery, Node.js.\n Deployed on AWS.",
+          "• A pseudo League of Legends analytics statistics site\n• Previously with daily updated data\n• Now with a fixed data set due to breaking Riot API changes\n• Built with Javascript, jQuery, Node.js\n• Deployed on AWS",
         image: "axe.png",
         url: "http://axe.gg/",
         urlSource: "https://github.com/akassian/Analytical-Website-AxeGG",

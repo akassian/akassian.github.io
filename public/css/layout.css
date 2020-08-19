@@ -36,11 +36,12 @@ body {
   width: 175px;
   height: 175px;
   border-radius: 100%;
+  box-shadow: 5px 5px 5px rgba(218, 165, 32, 0.1); /* Goldenrod rgba shadow */
 }
 
 .wave-horizontal {
   /* align-self: flex-end; */
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   /* background-color: #F44336; */
   /* height: 200px; */
@@ -254,7 +255,7 @@ ul#nav li.current a {
 }
 
 #about .bio {
-  white-space: pre-wrap;
+  white-space: pre-wrap; /* Allows for \n for line breaking in strings - used by resumeData */
 }
 
 #about a,
@@ -411,7 +412,7 @@ ul#nav li.current a {
 
 .card-container {
   margin: auto;
-  width: 50%;
+  width: 75%;
   text-align: center;
   /* display: flex; */
   padding: 10px;
@@ -463,7 +464,7 @@ ul#nav li.current a {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 
-  background: url(../images/overlay-bg.png) repeat;
+  background: url(../../images/overlay-bg.png) repeat;
 }
 .projects-item .item-wrap .link-icon {
   display: block;

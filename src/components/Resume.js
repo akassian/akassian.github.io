@@ -1,6 +1,10 @@
 import React from "react";
 
+/* Resume Section */
 function Resume({ data }) {
+  /* Map over education data,
+  (array of objects with school, degree, graduated, description),
+  and generate display HTML for each */
   let education = data.education.map(function (education) {
     return (
       <div key={education.school}>
@@ -13,6 +17,9 @@ function Resume({ data }) {
       </div>
     );
   });
+  /* Map over work data,
+  (array of objects with company, title, years, description),
+  and generate display HTML for each */
   let work = data.work.map(function (work) {
     return (
       <div key={work.company}>
@@ -51,6 +58,7 @@ function Resume({ data }) {
 
         <div className="nine columns main-col">{work}</div>
 
+        {/* CURRENTLY DISABLED; Download Button For Resume */}
         {/* <div className="nine columns main-col download">
           <p>
             <a href={data.resumeDownload} className="button">
