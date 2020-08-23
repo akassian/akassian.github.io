@@ -8,7 +8,7 @@ export const resumeData = {
     occupation: "Full Stack Engineer",
     image: "headshot.png",
     bio:
-      "I find adventure in my work ethic - I love breaking out of my comfort zone and picking up new things!\n I find my greatest pleasure in my ability to enable others. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work.\n\n When I'm not coding away, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh.\n I love movies that are heavily sci-fi, fantastical, or simply break the mold - shoot me some recommendations!",
+      "I find adventure in my work ethic. I love breaking out of my comfort zone and picking up new things!\n Still, I take great pride in reliability. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work. \n\n When I'm not coding, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh.\n I love movies that lean towards sci-fi, fantasy, or simply break the mold. Shoot me some recommendations!",
     email: "akassian@berkeley.edu",
     phone: "(510) 589-8412",
     address: {
@@ -39,13 +39,13 @@ export const resumeData = {
         school: "UC Berkeley",
         degree: "Computer Science",
         graduated: "December 2019",
-        description: "Bachelor's in Computer Science",
+        description: "Bachelor's in Computer Science • GPA 3.26",
       },
       {
         school: "Rithm School",
         degree: "Full Stack Web Development",
         graduated: "June 2020",
-        description: "Full Stack Program in San Francisco",
+        description: "Full Stack Program in San Francisco, CA",
       },
     ],
     work: [
@@ -64,9 +64,9 @@ export const resumeData = {
       },
       {
         company: "UC Berkeley",
-        title: "Academic Intern",
+        title: "Computer Lab Assistant",
         years: "01/2017 - 05/2017",
-        description: "Lab Assistant for 2 sections of CS 61B • Data Structures",
+        description: "Assisted 2 sections of CS 61B • Data Structures",
       },
     ],
     skills: [
