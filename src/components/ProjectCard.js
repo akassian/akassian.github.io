@@ -11,7 +11,8 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import VisibilityIcon from "@material-ui/icons/Visibility";
+// import VisibilityIcon from "@material-ui/icons/Visibility";
+import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 /* Styles for ProjectCard */
@@ -92,7 +93,7 @@ export default function ProjectCard({
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="view" href={url}>
-          <VisibilityIcon />
+          <LanguageIcon />
         </IconButton>
         <IconButton aria-label="github" href={urlSource}>
           <GitHubIcon />
