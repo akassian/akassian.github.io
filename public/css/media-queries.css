@@ -10,8 +10,8 @@
 @media only screen and (max-width: 1024px) {
   /* header styles
    ------------------------------------------------------------------ */
-  header .banner-text h1 {
-    font: 80px/1.1em "opensans-bold", sans-serif;
+  .intro .banner-text h1 {
+    font: 50px/1.1em "opensans-bold", sans-serif;
     letter-spacing: -1px;
     margin: 0 auto 12px auto;
   }
@@ -20,20 +20,20 @@
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-  /* header styles
+  /* .intro styles
    ------------------------------------------------------------------ */
-  header .banner {
+  .intro .banner {
     padding-bottom: 12px;
   }
-  header .banner-text h1 {
-    font: 78px/1.1em "opensans-bold", sans-serif;
+  .intro .banner-text h1 {
+    font: 30px/1.1em "opensans-bold", sans-serif;
     letter-spacing: -1px;
   }
-  header .banner-text h3 {
+  .intro .banner-text h3 {
     font: 17px/1.9em "librebaskerville-regular", serif;
     width: 80%;
   }
-  header .banner-text hr {
+  .intro .banner-text hr {
     width: 65%;
     margin: 12px auto;
   }
