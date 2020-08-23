@@ -32,11 +32,14 @@ body {
 }
 
 .profile-pic {
-  position: relative;
+  /* position: relative; */
+  margin-top: 50px;
+  margin-bottom: 25px;
   width: 175px;
   height: 175px;
   border-radius: 100%;
   box-shadow: 5px 5px 5px rgba(218, 165, 32, 0.1); /* Goldenrod rgba shadow */
+  /* margin-bottom: 25px; */
 }
 
 .wave-horizontal {
