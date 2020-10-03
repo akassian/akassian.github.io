@@ -34,6 +34,42 @@ export const resumeData = {
   resume: {
     resumeDownload:
       "https://docs.google.com/document/d/1tz9CDTwpOkvGkl7NDs7h35WoVq1pEgMOanENYMf9bUU/export?format=pdf",
+
+    skills: [
+      {
+        category: "Languages",
+        languages: [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "HTML",
+          "CSS",
+          "SQL",
+          "Java",
+        ],
+      },
+      {
+        category: "Libraries",
+        languages: [
+          "React",
+          "React Native",
+          "Expo",
+          "Redux",
+          "jQuery",
+          "Bootstrap",
+          "Material UI",
+          "Node.js",
+          "Express.js",
+          "Flask",
+          "RESTful API",
+          "GraphQL",
+          "Jest",
+          "Jasmine",
+          "Figma",
+        ],
+      },
+      { category: "Databases", languages: ["PostgreSQL", "MySQL", "MongoDB"] },
+    ],
     education: [
       {
         school: "UC Berkeley",
@@ -76,34 +112,36 @@ export const resumeData = {
         description: "Assisted 2 sections of CS 61B • Data Structures",
       },
     ],
-    skills: [
-      {
-        Languages: [
-          "Python",
-          "JavaScript",
-          "TypeScript",
-          "HTML",
-          "CSS",
-          "SQL",
-          "Java",
-        ],
-      },
-      {
-        "Libraries & Frameworks": [
-          "React",
-          "Redux",
-          "jQuery",
-          "Bootstrap",
-          "Material UI",
-          "Node.js",
-          "Express.js",
-          "Flask",
-          "Jest",
-          "Jasmine",
-        ],
-      },
-      { Databases: ["PostgreSQL", "MySQL", "MongoDB"] },
-    ],
+    // skills: [
+    //   {
+    //     Languages: [
+    //       "Python",
+    //       "JavaScript",
+    //       "TypeScript",
+    //       "HTML",
+    //       "CSS",
+    //       "SQL",
+    //       "Java",
+    //     ],
+    //   },
+    //   {
+    //     "Libraries & Frameworks": [
+    //       "React",
+    //       "React Native",
+    //       "Expo",
+    //       "Redux",
+    //       "jQuery",
+    //       "Bootstrap",
+    //       "Material UI",
+    //       "Node.js",
+    //       "Express.js",
+    //       "Flask",
+    //       "Jest",
+    //       "Jasmine",
+    //     ],
+    //   },
+    //   { Databases: ["PostgreSQL", "MySQL", "MongoDB"] },
+    // ],
   },
   projects: {
     projects: [

@@ -406,6 +406,23 @@ ul#nav li.current a {
   margin-top: 6px;
 }
 
+#resume .box {
+  /* Dark Blues: midnightblue < #121254 < #0e0e3f */
+  /* color: goldenrod; */
+  color: midnightblue;
+  background: rgba(218, 165, 32, 0.25);
+  /* background: rgba(25, 25, 112, 0.5); */
+  /* background: darkslateblue; */
+  padding: 2.5px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2.5px;
+  /* border: 2px solid #73ad21; */
+}
+
+#resume .box-container {
+}
+
 /* Projects Section */
 #projects {
   /* background: #ebeeee; */

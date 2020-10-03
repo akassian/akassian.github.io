@@ -2,6 +2,38 @@ import React from "react";
 
 /* Resume Section */
 function Resume({ data }) {
+  /* Map over skills data,
+  (array of objects with category: [array languages]),
+  and generate display HTML for each */
+  console.log(data.skills);
+
+  let skills = data.skills.map(function (skill) {
+    let languages = skill.languages.map(function (language) {
+      return (
+        <div key={language} className="box">
+          {/* ✔ ✓ ✗ √ */}✓ {language}
+        </div>
+      );
+    });
+
+    return (
+      <div key={skill.category} className="row work">
+        <div className="three columns header-col">
+          <h1>
+            <span>{skill.category}</span>
+          </h1>
+        </div>
+
+        <div className="nine columns main-col">
+          {/* <div key={skill.category}> */}
+          {/* <h3>{skill.category}</h3> */}
+          <p className="date">{languages}</p>
+          {/* </div> */}
+        </div>
+      </div>
+    );
+  });
+
   /* Map over education data,
   (array of objects with school, degree, graduated, description),
   and generate display HTML for each */
@@ -35,6 +67,8 @@ function Resume({ data }) {
 
   return (
     <section id="resume">
+      {skills}
+
       <div className="row education">
         <div className="three columns header-col">
           <h1>

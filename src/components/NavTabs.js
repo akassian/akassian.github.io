@@ -86,7 +86,7 @@ export default function NavTabs() {
           <Tab className={getStyle(value === 1)} label="About" href="#about" />
           <Tab
             className={getStyle(value === 2)}
-            label="Resume"
+            label="Background"
             href="#resume"
           />
           <Tab
@@ -96,6 +96,13 @@ export default function NavTabs() {
           />
           <Tab
             className={getStyle(value === 4)}
+            label="Resume"
+            href="https://docs.google.com/document/d/1tz9CDTwpOkvGkl7NDs7h35WoVq1pEgMOanENYMf9bUU/export?format=pdf"
+            // Link that downloads pdf of latest resume
+            // TODO: build this link from my resume as a variable of resumeData.js
+          />
+          <Tab
+            className={getStyle(value === 5)}
             label="Email"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=akassian@berkeley.edu"
             // Link that creates a new gmail composed to my email, hardcoded for now
