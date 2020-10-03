@@ -50,6 +50,13 @@ export const resumeData = {
     ],
     work: [
       {
+        company: "Ziggurat Technologies, Inc",
+        title: "Full Stack Engineer Intern",
+        years: "09/2020 - Present",
+        description:
+          "React Native • Expo • Redux • JavaScript • HTML • CSS • RESTful API",
+      },
+      {
         company: "Clevercounsel, LLC",
         title: "Full Stack Engineer Intern",
         years: "05/2020 - 06/2020",
