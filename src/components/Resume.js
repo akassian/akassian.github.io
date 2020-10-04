@@ -9,7 +9,8 @@ function Resume({ data }) {
     let languages = skill.languages.map(function (language) {
       return (
         <div key={language} className="box">
-          {/* ✔ ✓ ✗ √ */}✓ {language}
+          {/* ✔ ✓ ✗ √ */}
+          {language}
         </div>
       );
     });

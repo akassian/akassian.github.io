@@ -409,7 +409,7 @@ ul#nav li.current a {
 #resume .box {
   /* Dark Blues: midnightblue < #121254 < #0e0e3f */
   /* color: goldenrod; */
-  color: midnightblue;
+  /* color: midnightblue; */
   background: rgba(218, 165, 32, 0.25);
   /* background: rgba(25, 25, 112, 0.5); */
   /* background: darkslateblue; */
@@ -417,7 +417,7 @@ ul#nav li.current a {
   border-radius: 10px;
   display: inline-block;
   margin: 2.5px;
-  /* border: 2px solid #73ad21; */
+  border: 1px solid goldenrod;
 }
 
 /* Projects Section */
