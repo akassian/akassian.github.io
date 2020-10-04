@@ -5,8 +5,6 @@ function Resume({ data }) {
   /* Map over skills data,
   (array of objects with category: [array languages]),
   and generate display HTML for each */
-  console.log(data.skills);
-
   let skills = data.skills.map(function (skill) {
     let languages = skill.languages.map(function (language) {
       return (
