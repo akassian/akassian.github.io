@@ -75,7 +75,7 @@ export const resumeData = {
         school: "UC Berkeley",
         degree: "Computer Science",
         graduated: "December 2019",
-        description: "Bachelor's in Computer Science • GPA 3.26",
+        description: "Bachelor's in Computer Science",
       },
       {
         school: "Rithm School",
