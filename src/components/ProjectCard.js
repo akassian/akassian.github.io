@@ -95,9 +95,9 @@ export default function ProjectCard({
         <IconButton aria-label="view" href={url}>
           <LanguageIcon />
         </IconButton>
-        <IconButton aria-label="github" href={urlSource}>
+        {urlSource ? <IconButton aria-label="github" href={urlSource}>
           <GitHubIcon />
-        </IconButton>
+        </IconButton> : null}
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,

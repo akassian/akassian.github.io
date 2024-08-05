@@ -6,9 +6,9 @@ export const resumeData = {
     firstName: "Andrei",
     lastName: "Kassiantchouk",
     occupation: "Full Stack Engineer",
-    image: "headshot.png",
+    image: "headshot2.png",
     bio:
-      "I find adventure in my work ethic. I love breaking out of my comfort zone and picking up new things!\n Still, I take great pride in reliability. I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work. \n\n When I'm not coding, I enjoy games that involve theorycrafting and debatable strategies to keep me experimenting and keep things fresh.\n I love movies that lean towards sci-fi, fantasy, or simply break the mold. Shoot me some recommendations!",
+      "I find adventure in my work ethic - I love breaking out of my comfort zone and picking up new things!\n I take great pride in reliability, I tend to see things as ongoing - I'm always working to cleanup, improve, promote maintainability, and make things easier for future work. \n\n When I'm not coding, I enjoy games that involve theorycrafting and debatable strategies to keep me learning and keep things fresh.\n I love movies that lean towards sci-fi, horror, or simply break the mold.",
     email: "akassian@berkeley.edu",
     phone: "(510) 589-8412",
     address: {
@@ -39,19 +39,21 @@ export const resumeData = {
       {
         category: "Languages",
         languages: [
-          "Python",
-          "JavaScript",
+          "React",
           "TypeScript",
+          "JavaScript", 
+          "Sass",
+          "Python",
+          "Java",
+          "SQL",
           "HTML",
           "CSS",
-          "SQL",
-          "Java",
         ],
       },
       {
-        category: "Libraries",
+        category: "Frameworks",
         languages: [
-          "React",
+          "Module Federation",
           "React Native",
           "Expo",
           "Redux",
@@ -61,11 +63,12 @@ export const resumeData = {
           "Node.js",
           "Express.js",
           "Flask",
-          "RESTful API",
-          "GraphQL",
+          "Jinja",
+          "REST",
+          "gRPC",
           "Jest",
           "Jasmine",
-          "Figma",
+          "Figma"
         ],
       },
       { category: "Databases", languages: ["PostgreSQL", "MySQL", "MongoDB"] },
@@ -86,9 +89,16 @@ export const resumeData = {
     ],
     work: [
       {
+        company: "JPMorgan Chase & Co",
+        title: "Senior Software Engineer | Full Stack",
+        years: "11/2020 - Present",
+        description:
+          "React • TypeScript • Module Federation • Sass • Python • Java • gRPC • SQL",
+      },
+      {
         company: "Ziggurat Technologies, Inc",
         title: "Full Stack Engineer Intern",
-        years: "09/2020 - Present",
+        years: "09/2020 - 10/2020",
         description:
           "React Native • Expo • Redux • JavaScript • HTML • CSS • RESTful API",
       },
@@ -146,7 +156,25 @@ export const resumeData = {
   projects: {
     projects: [
       {
-        title: "Bearcon.net",
+        title: "Partner Center",
+        description:
+          "Work Project • React • TypeScript • Jest • Flask • Java • SQL",
+        expandedDescription:
+          "• A centralized hub to manage partner payment business enabling clients to access timely payment reports and metrics for accurate decision-making",
+        image: "partner-center2.png",
+        url: "https://dev.wepay.com/user-interfaces/explore-partner-center/",
+      },
+      {
+        title: "Commerce Center",
+        description:
+          "Work Project • React • Module Federation • TypeScript • Jest • Java",
+        expandedDescription:
+          "• An in-development equivalent dashboard for clients to manage their business platforms and transaction data",
+        image: "commerce-center.png",
+        url: "https://jpmorgan.com/commerce-center",
+      },
+      {
+        title: "Bearcon.net (inactive)",
         description:
           "Solo Project • MongoDB • Express • React • Redux • Node.js • AWS",
         expandedDescription:
@@ -157,7 +185,7 @@ export const resumeData = {
           "https://github.com/akassian/Social-Network-Website-Bearcon.net",
       },
       {
-        title: "Warbler",
+        title: "Warbler (inactive)",
         description:
           " Group Project • Jinja • Python • Flask • PostgreSQL • Heroku",
         expandedDescription:
@@ -167,7 +195,7 @@ export const resumeData = {
         urlSource: "https://github.com/akassian/Warbler",
       },
       {
-        title: "Axe.gg",
+        title: "Axe.gg (inactive)",
         description: "Solo Project • Javascript • jQuery • Node.js • AWS",
         expandedDescription:
           "• Pseudo League of Legends analytics statistics site\n• Previously with daily updated data\n• Now with a fixed data set due to breaking Riot API changes\n• Built with Javascript, jQuery, Node.js\n• Deployed on AWS",
