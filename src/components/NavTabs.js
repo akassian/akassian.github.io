@@ -74,7 +74,7 @@ export default function NavTabs() {
   }
 
   return (
-    <div className={classes.root}>
+    <div id="app-bar" className={classes.root}>
       <AppBar>
         <Tabs
           value={value}
@@ -103,6 +103,7 @@ export default function NavTabs() {
           />
           <Tab
             className={getStyle(value === 5)}
+            id="email-tab"
             label="Email"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=akassian@berkeley.edu"
             // Link that creates a new gmail composed to my email, hardcoded for now
@@ -111,12 +112,13 @@ export default function NavTabs() {
         </Tabs>
       </AppBar>
       {/* Hardcoded anchor div id for ScrollTop to scroll back to */}
-      <div id="back-to-top-anchor" />
-      <ScrollTop>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
+      <div id="back-to-top-anchor">
+        <ScrollTop>
+          <Fab color="secondary" size="small" aria-label="scroll back to top">
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </ScrollTop>
+      </div>
     </div>
   );
 }
