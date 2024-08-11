@@ -158,7 +158,7 @@ export const resumeData = {
       {
         title: "Partner Center",
         description:
-          "Work Project • React • TypeScript • Jest • Flask • Java • SQL",
+          "Work Team Project • React • TypeScript • Jest • Flask • Java • SQL",
         expandedDescription:
           "• A centralized hub to manage partner payment business enabling clients to access timely payment reports and metrics for accurate decision-making",
         image: "partner-center2.png",
@@ -167,7 +167,7 @@ export const resumeData = {
       {
         title: "Commerce Center",
         description:
-          "Work Project • React • Module Federation • TypeScript • Jest • Java",
+          "Work Team Project • React • Module Federation • TypeScript • Jest • Java",
         expandedDescription:
           "• An in-development equivalent dashboard for clients to manage their business platforms and transaction data",
         image: "commerce-center.png",
