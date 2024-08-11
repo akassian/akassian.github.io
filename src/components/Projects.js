@@ -24,7 +24,7 @@ function Projects({ data }) {
 
   return (
     <section id="projects">
-      <h1>Some Of My Works</h1>
+      <h1>Projects</h1>
       <div className="card-container">
         <Grid container spacing={2}>
           {projects}

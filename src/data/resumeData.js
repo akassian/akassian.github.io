@@ -71,7 +71,7 @@ export const resumeData = {
           "Figma"
         ],
       },
-      { category: "Databases", languages: ["PostgreSQL", "MySQL", "MongoDB"] },
+      { category: "Databases", languages: ["Cassandra", "MongoDB", "BigQuery", "PostgreSQL", "MySQL", "MongoDB"] },
     ],
     education: [
       {
@@ -180,7 +180,7 @@ export const resumeData = {
         expandedDescription:
           "• UC Berkeley pseudo social network\n• MERN stack; built with MongoDB, Express, React, Redux, Node.js\n• Deployed on AWS",
         image: "bearcon.gif",
-        url: "http://bearcon.net/",
+        // url: "http://bearcon.net/",
         urlSource:
           "https://github.com/akassian/Social-Network-Website-Bearcon.net",
       },
@@ -191,7 +191,7 @@ export const resumeData = {
         expandedDescription:
           "• Twitter toy clone\n• Built using Jinja, Python, Flask, and PostgreSQL\n• Deployed on Heroku",
         image: "warbler.gif",
-        url: "http://warbler.andreik.net/",
+        // url: "http://warbler.andreik.net/",
         urlSource: "https://github.com/akassian/Warbler",
       },
       {
@@ -200,7 +200,7 @@ export const resumeData = {
         expandedDescription:
           "• Pseudo League of Legends analytics statistics site\n• Previously with daily updated data\n• Now with a fixed data set due to breaking Riot API changes\n• Built with Javascript, jQuery, Node.js\n• Deployed on AWS",
         image: "axe.gif",
-        url: "http://axe.gg/",
+        // url: "http://axe.gg/",
         urlSource: "https://github.com/akassian/Analytical-Website-AxeGG",
       },
     ],

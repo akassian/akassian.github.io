@@ -92,9 +92,9 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="view" href={url}>
+       {url ? <IconButton aria-label="view" href={url}>
           <LanguageIcon />
-        </IconButton>
+        </IconButton> : null}
         {urlSource ? <IconButton aria-label="github" href={urlSource}>
           <GitHubIcon />
         </IconButton> : null}
